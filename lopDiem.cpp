@@ -15,8 +15,8 @@ void lopDiem::xuatDiem()
     printf("(%d,%d)", X, Y);
 }
 
-double lopDiem::khoangCach(lopDiem b)
+double lopDiem::khoangCach(lopDiem B)
 {
-    double kq = sqrt((X - b.X) * (X - b.X) + (Y - b.Y) * (Y - b.Y));
+    double kq = sqrt((X - B.X) * (X - B.X) + (Y - B.Y) * (Y - B.Y));
     return kq;
 }
