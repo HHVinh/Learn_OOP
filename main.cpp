@@ -3,16 +3,20 @@
 
 int main()
 {
-    phanSo a, b;
+    // phanSo a, b;
 
-    nhapPhanSo(a);
-    nhapPhanSo(b);
+    // nhapPhanSo(a);
+    // nhapPhanSo(b);
 
-    phanSo kq;
+    // phanSo kq;
 
-    kq = congHaiPhanSo(a, b);
+    // kq = congHaiPhanSo(a, b);
 
-    printf("Kết quả là: %d/%d",kq.TuSo,kq.MauSo);
+    // printf("Kết quả là: %d/%d",kq.TuSo,kq.MauSo);
 
+
+    lopPhanSo p1
     return 0;
+
+
 }
