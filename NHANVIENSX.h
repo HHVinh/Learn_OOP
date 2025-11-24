@@ -20,10 +20,11 @@ public:
     // Toán tử gán =
     void operator=(const NHANVIENSX& b);
     // Hàm ảo
-    void HamAo();
+    void HamAo() override;
+    double TinhLuong() override;
 
-    void NhapNV();
-    int TinhLuongNVSX();
+
+    void NhapNV() override;
     ~NHANVIENSX();
 };
 

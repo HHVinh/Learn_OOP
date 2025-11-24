@@ -5,51 +5,45 @@ using namespace std;
 
 CONGTY::CONGTY()
 {
-    SoLuongSX = 0;
-    SoLuongVP = 0;
+    SoLuongNV = 0;
 }
 
 void CONGTY::Nhap()
 {
-    cout << "Nhập số lượng NVVP: ";
-    cin >> SoLuongVP;
+    cout << "Nhập số lượng NV: ";
+    cin >> SoLuongNV;
     cin.ignore();
 
-    if(SoLuongVP > 0)
+    for (int i = 0; i < SoLuongNV; i++)
     {
-        for (int i = 0; i < SoLuongVP; i++)
-        {
-            DanhSachNVVP[i].NhapNV();
-        }
+        cout << "Nhập nhân viên thứ " << i + 1 << ": ";
+        cout << "\nNhập loại nhân viên (1 NVVP, 2 NVSX): ";
+        int loaiNhanVien;
+        cin >> loaiNhanVien;
+        if (loaiNhanVien == 1)
+            DanhSachNV[i] = new NHANVIENVP();
+        else
+            DanhSachNV[i] = new NHANVIENSX();
+
+        DanhSachNV[i]->NhapNV();
+
     }
 
-    cout << endl << "Nhập số lượng NVSX: ";
-    cin >> SoLuongSX;
-    cin.ignore();
-
-    if(SoLuongSX > 0)
-    {
-        for (int i = 0; i < SoLuongSX; i++)
-        {
-            DanhSachNVSX[i].NhapNV();
-        }
-    }
 }
 
 double CONGTY::TongLuong()
 {
     double TongLuong = 0;
-    for (int i = 0; i < SoLuongVP; i++)
+    for (int i = 0; i < SoLuongNV; i++)
     {
-        TongLuong += DanhSachNVVP[i].TinhLuongNVVP();
+        TongLuong += DanhSachNV[i]->TinhLuong();
 
-    }
-
-    for (int i = 0; i < SoLuongSX; i++)
-    {
-        TongLuong += DanhSachNVSX[i].TinhLuongNVSX();
-        
     }
 
     return TongLuong;
+}
+
+CONGTY::~CONGTY()
+{
+    
 }

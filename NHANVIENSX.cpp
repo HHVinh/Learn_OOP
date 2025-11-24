@@ -36,14 +36,13 @@ void NHANVIENSX ::operator=(const NHANVIENSX& b)
 void NHANVIENSX ::NhapNV()
 {
     cout << "Hàm nhập của NHANVIENSX\n";
-    return;
     NHANVIEN ::NhapNV();
     cout<<"Nhập số sản phẩm: ";
     cin >> SoLuong;
     cin.ignore();
 }
 
-int NHANVIENSX::TinhLuongNVSX()
+double NHANVIENSX::TinhLuong()
 {
     return SoLuong * 10;
 }

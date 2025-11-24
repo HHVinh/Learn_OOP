@@ -193,37 +193,62 @@
 // }
 
 
+// #include <iostream>
+// #include <string>
+// #include "NHANVIEN.h"
+// #include "CONGTY.h"
+// using namespace std;
+
+// int main()
+// {
+    // NHANVIEN* p;
+    // NHANVIENSX* pNVSX;
+    // NHANVIENVP* pNVVP;
+
+    // p = new NHANVIEN();
+    // p->NhapNV();
+    // p->HamAo();
+
+    // pNVSX = new NHANVIENSX();
+    // pNVSX->NhapNV();
+    // pNVSX->HamAo();
+
+    // p = pNVSX;
+    // p->NhapNV();
+    // p->HamAo();
+
+    // pNVVP = new NHANVIENVP();
+    // pNVVP->NhapNV();
+    // pNVVP->HamAo();
+
+    // p = pNVVP;
+    // p->NhapNV();
+    // p->HamAo();
+
+    // CONGTY a;
+    // a.Nhap();
+    // double ketQua = a.TongLuong();
+    // cout << "Tổng lương là: " << ketQua;
+
+//     return 0;
+// }
+
 #include <iostream>
 #include <string>
-#include "NHANVIEN.h"
-#include "CONGTY.h"
+#include "LOPDIEM3.h"
+#include "HINH.h"
+#include "HINHCHUNHAT.h"
+#include "HINHTRON.h"
+#include "MATPHANG.h"
 using namespace std;
 
 int main()
 {
-    NHANVIEN* p;
-    NHANVIENSX* pNVSX;
-    NHANVIENVP* pNVVP;
+    MATPHANG a;
 
-    p = new NHANVIEN();
-    p->NhapNV();
-    p->HamAo();
-
-    pNVSX = new NHANVIENSX();
-    pNVSX->NhapNV();
-    pNVSX->HamAo();
-
-    p = pNVSX;
-    p->NhapNV();
-    p->HamAo();
-
-    pNVVP = new NHANVIENVP();
-    pNVVP->NhapNV();
-    pNVVP->HamAo();
-
-    p = pNVVP;
-    p->NhapNV();
-    p->HamAo();
+    a.nhap();
+    double ketQua = a.tongChuVi();
+    cout << "Kết quả tổng chu vi là: " << ketQua;
 
     return 0;
 }

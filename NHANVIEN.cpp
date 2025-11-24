@@ -35,7 +35,6 @@ void NHANVIEN ::HamAo()
 void NHANVIEN ::NhapNV()
 {   
     cout << "Hàm nhập của NHANVIEN\n";
-    return;
     cin.ignore();
     cout << "Nhập họ tên: ";
     getline(cin, HoTen);

@@ -8,15 +8,14 @@
 class CONGTY
 {
     private:
-        NHANVIENSX DanhSachNVSX[100];
-        int SoLuongSX;
-        NHANVIENVP DanhSachNVVP[100];
-        int SoLuongVP;
+        NHANVIEN* DanhSachNV[100];
+        int SoLuongNV;
 
     public:
         CONGTY();
         void Nhap();
         double TongLuong();
+        ~CONGTY();
 
 };
 

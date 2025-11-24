@@ -40,7 +40,6 @@ void NHANVIENVP::operator=(const NHANVIENVP& b)
 void NHANVIENVP ::NhapNV()
 {
     cout << "Hàm nhập của NHANVIENVP\n";
-    return;
     NHANVIEN:: NhapNV();
     cout << "Nhập hệ số lương: ";
     cin >> HeSoLuong;
@@ -49,7 +48,7 @@ void NHANVIENVP ::NhapNV()
     cin.ignore();
 }
 
-double NHANVIENVP::TinhLuongNVVP()
+double NHANVIENVP::TinhLuong()
 {
     return HeSoLuong * 1000 + PhuCap;
 }

@@ -21,8 +21,9 @@ public:
     void operator=(const NHANVIEN& b);
     // Hàm ảo
     virtual void HamAo();
+    virtual double TinhLuong() = 0;
 
-    void NhapNV();
+    virtual void NhapNV();
     ~NHANVIEN();
 };
 
