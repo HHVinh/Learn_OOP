@@ -246,8 +246,8 @@
 #include "Folder.h"
 using namespace std;
 
-int main()
-{
+// int main()
+// {
     // MATPHANG a;
 
     // a.nhap();
@@ -256,32 +256,51 @@ int main()
 
     // APPSETTING* p1 = APPSETTING::getInstance();
 
-    FileInfo* log1 = new FileInfo(100);
-    FileInfo* log2 = new FileInfo(200);
-    FileInfo* log3 = new FileInfo(300);
-    FileInfo* log4 = new FileInfo(400);
+    // FileInfo* log1 = new FileInfo(100);
+    // FileInfo* log2 = new FileInfo(200);
+    // FileInfo* log3 = new FileInfo(300);
+    // FileInfo* log4 = new FileInfo(400);
 
-    Folder* HoChiMinh = new Folder();
-    Folder* south = new Folder();
-    Folder* north = new Folder();
-    Folder* HaNoi = new Folder();
-    Folder* VietNam = new Folder();
+    // Folder* HoChiMinh = new Folder();
+    // Folder* south = new Folder();
+    // Folder* north = new Folder();
+    // Folder* HaNoi = new Folder();
+    // Folder* VietNam = new Folder();
 
-    VietNam->add(south);
-    VietNam->add(north);
-    VietNam->add(log4);
+    // VietNam->add(south);
+    // VietNam->add(north);
+    // VietNam->add(log4);
 
-    south->add(HoChiMinh);
-    HoChiMinh->add(log1);
-    HoChiMinh->add(log2);
+    // south->add(HoChiMinh);
+    // HoChiMinh->add(log1);
+    // HoChiMinh->add(log2);
 
-    north->add(HaNoi);
-    HaNoi->add(log3);
+    // north->add(HaNoi);
+    // HaNoi->add(log3);
 
-    int totalSize = VietNam->getSize();
-    cout << "Tổng kích thước là: " << totalSize;
+    // int totalSize = VietNam->getSize();
+    // cout << "Tổng kích thước là: " << totalSize;
 
-    delete VietNam;
+    // delete VietNam;
+
+//     return 0;
+// }
+
+
+
+#include <iostream>
+#include <string>
+#include "ThoiGian.h"
+#include "DongHoKim.h"
+#include "DongHoDienTu.h"
+using namespace std;
+int main()
+{
+    ThoiGian* t = new ThoiGian();
+    DongHoKim* dhk = new DongHoKim(t);
+    DongHoDienTu* dhdt = new DongHoDienTu(t);
+
+    t->SetTime(10, 30,15);
 
     return 0;
 }
