@@ -240,15 +240,48 @@
 #include "HINHCHUNHAT.h"
 #include "HINHTRON.h"
 #include "MATPHANG.h"
+#include "APPSETTING.h"
+#include "FileInfo.h"
+#include "FileSystem.h"
+#include "Folder.h"
 using namespace std;
 
 int main()
 {
-    MATPHANG a;
+    // MATPHANG a;
 
-    a.nhap();
-    double ketQua = a.tongChuVi();
-    cout << "Kết quả tổng chu vi là: " << ketQua;
+    // a.nhap();
+    // double ketQua = a.tongChuVi();
+    // cout << "Kết quả tổng chu vi là: " << ketQua;
+
+    // APPSETTING* p1 = APPSETTING::getInstance();
+
+    FileInfo* log1 = new FileInfo(100);
+    FileInfo* log2 = new FileInfo(200);
+    FileInfo* log3 = new FileInfo(300);
+    FileInfo* log4 = new FileInfo(400);
+
+    Folder* HoChiMinh = new Folder();
+    Folder* south = new Folder();
+    Folder* north = new Folder();
+    Folder* HaNoi = new Folder();
+    Folder* VietNam = new Folder();
+
+    VietNam->add(south);
+    VietNam->add(north);
+    VietNam->add(log4);
+
+    south->add(HoChiMinh);
+    HoChiMinh->add(log1);
+    HoChiMinh->add(log2);
+
+    north->add(HaNoi);
+    HaNoi->add(log3);
+
+    int totalSize = VietNam->getSize();
+    cout << "Tổng kích thước là: " << totalSize;
+
+    delete VietNam;
 
     return 0;
 }
