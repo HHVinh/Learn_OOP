@@ -75,9 +75,103 @@ using namespace std;
 
 
 
+// 2024 - 2025 - HK1
+// #include "SinhVien.h"
+// #include "LopHoc.h"
+// #include "MatPhang.h"
+// #include "HTron.h"
+// #include "HVuong.h"
+// #include "HChuNhat.h"
+// #include "QuanLyHinh.h"
+
+// int main()
+// {   
+    // Câu 1
+    // LopHoc lop;
+
+    // lop.nhapThongTin();
+    // lop.xuatThongTin();
+    // lop.xuatSVGioi();
+
+
+    // Câu 2 Không dùng QuanLyHinh
+    // MatPhang* mp;
+    
+    // mp = new HTron();
+    // mp->themHinh();
+    // mp->tinhChuVi();
+    // mp->tinhDienTich();
+    // mp->xuatHinh();
+
+    // mp = new HVuong();
+    // mp->themHinh();
+    // mp->tinhChuVi();
+    // mp->tinhDienTich();
+    // mp->xuatHinh();
+
+    // mp = new HChuNhat();
+    // mp->themHinh();
+    // mp->tinhChuVi();
+    // mp->tinhDienTich();
+    // mp->xuatHinh();
+
+
+    // Câu 2 Có dùng QuanLyHinh
+//     QuanLyHinh quanLy;
+
+//     quanLy.themHinh();
+//     quanLy.xuatHinh();
+    
+//     return 0;
+// }
+
+
+
+// Học kì 2 - 2023 - 2024 Câu 1
+// #include "PhanSoThi.h"
+// #include "MangPhanSo.h"
+
+// int main()
+// {
+//     MangPhanSo* arr = new MangPhanSo();
+//     PhanSoThi p1;
+//     PhanSoThi p2;
+//     PhanSoThi p3;
+
+//     p1.NhapPhanSo();
+//     p2.NhapPhanSo();
+//     p3.NhapPhanSo();
+
+//     arr->themPhanSo(p1);
+//     arr->themPhanSo(p2);
+//     arr->themPhanSo(p3);
+
+//     arr->inMangPhanSo();
+
+//     arr->tinhTrungBinh();
+
+//     p1.soSanh(0);
+
+//     return 0;
+// }
+
+
+// Học kì 2 - 2023 - 2024 Câu 2
+#include "ToaDo.h"
+#include "HinhTron.h"
+#include "HinhChuNhat.h"
+#include "HinhHoc.h"
+#include "DanhSachHinh.h"
 
 int main()
 {
+    DanhSachHinh dsHinh;
+
+    dsHinh.themHinh();
+    cout << "\n\n === DANH SACH HINH ===";
+    int soLuong = dsHinh.demSoLuong();
+    cout << "\n\nSo luong hinh yeu cau: " << soLuong;
+    
 
     return 0;
 }
