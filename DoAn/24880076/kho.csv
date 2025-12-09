@@ -1,0 +1,12 @@
+MaMatHang;MaHD;TenHang;NgayNhap;SoLuongNhap;SoLuongTon;NhaCungCap;GiaNhap
+MH001;HDN001;Soda Chanh;01/11/2025;150;100;Cong ty Nuoc Ngot Viet;10500
+MH002;HDN001;Nuoc Cam Ep;01/11/2025;80;80;Cong ty Nuoc Ngot Viet;11200
+MH004;HDN002;Banh Kem Tuoi;02/11/2025;60;20;Tiem Banh Thien An;35000
+MH006;HDN003;Bim Bim Khoai Tay;03/11/2025;200;100;Cong ty Thuc Pham An Lien;7800
+MH007;HDN003;Snack Rong Bien;03/11/2025;120;70;Cong ty Thuc Pham An Lien;9500
+MH008;HDN004;Sua Tam Thao Duoc;04/11/2025;50;30;My Pham Xanh;45000
+MH009;HDN004;Dau Goi Huong Hoa;04/11/2025;40;40;My Pham Xanh;38000
+MH010;HDN005;Thit Hop Ga Xe;05/11/2025;100;70;Thuc Pham Bao Toan;28000
+MH011;HDN006;Sua Tuoi Tiet Trung;06/11/2025;150;150;Cong ty Sua Viet;18500
+MH012;HDN007;Mi Ga Cay;07/11/2025;300;150;Cong ty Mi An Lien;5200
+MH013;HDN008;Keo Cung Trai Cay;08/11/2025;250;150;Keo Ngot Dai Duong;3500
